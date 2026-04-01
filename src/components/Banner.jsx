@@ -1,5 +1,5 @@
-import bannerImg from "../../assets/banner.png";
-import playImg from "../../assets/Play.png";
+import bannerImg from "../assets/banner.png";
+import playImg from "../assets/Play.png";
 
 const Banner = ({ onExplore }) => {
   return (

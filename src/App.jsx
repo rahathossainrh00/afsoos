@@ -11,6 +11,7 @@ import HowItWorks from "./components/HowItWorks";
 import Pricing from "./components/Pricing";
 import CTABanner from "./components/CTABanner";
 import Footer from "./components/Footer";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 const getProducts = async () => {
   const res = await fetch("/products.json");
@@ -62,11 +63,13 @@ function App() {
 
       {/* Conditional Section */}
       {activeTab === "products" ? (
-        <Products
-          productPromise={productPromise}
-          carts={carts}
-          setCarts={setCarts}
-        />
+        <ErrorBoundary>
+          <Products
+            productPromise={productPromise}
+            carts={carts}
+            setCarts={setCarts}
+          />
+        </ErrorBoundary>
       ) : (
         <Cart carts={carts} setCarts={setCarts} />
       )}

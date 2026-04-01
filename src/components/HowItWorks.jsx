@@ -1,6 +1,6 @@
-import userImg from "../../assets/user.png";
-import packageImg from "../../assets/package.png";
-import rocketImg from "../../assets/rocket.png";
+import userImg from "../assets/user.png";
+import packageImg from "../assets/package.png";
+import rocketImg from "../assets/rocket.png";
 
 const steps = [
   {
