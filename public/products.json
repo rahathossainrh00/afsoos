@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "mo",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Access hundreds of professionally designed templates for any project or brand.",
+    "price": 49,
+    "period": "mo",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["500+ premium templates", "Brand kit builder", "Export to any format"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Download millions of royalty-free images, videos, and audio for your projects.",
+    "price": 19,
+    "period": "mo",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["10M+ stock assets", "4K video downloads", "Commercial license"],
+    "icon": "🖼️"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks, workflows, and processes to save hours every day.",
+    "price": 79,
+    "period": "mo",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["1000+ automations", "API integrations", "Advanced scheduling"],
+    "icon": "⚙️"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create stunning, ATS-friendly resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "mo",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["ATS-optimized templates", "AI suggestions", "One-click export"],
+    "icon": "📄"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Plan, create, and schedule engaging social media content across all platforms.",
+    "price": 39,
+    "period": "mo",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Multi-platform scheduler", "Content calendar", "Analytics dashboard"],
+    "icon": "📱"
+  }
+]

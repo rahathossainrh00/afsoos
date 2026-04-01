@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+/* Suppress DaisyUI scroll hint tooltip */
+.scrollbar-color,
+[data-scroll-hint],
+.scroll-hint {
+  display: none !important;
+}
+
