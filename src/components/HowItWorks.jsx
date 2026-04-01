@@ -1,21 +1,28 @@
+import userImg from "../../assets/user.png";
+import packageImg from "../../assets/package.png";
+import rocketImg from "../../assets/rocket.png";
+
 const steps = [
   {
     number: "01",
-    icon: "👤",
+    img: userImg,
+    alt: "Create Account",
     title: "Create Account",
     description:
       "Sign up in seconds with your email. No credit card required to get started with our free plan.",
   },
   {
     number: "02",
-    icon: "🛒",
+    img: packageImg,
+    alt: "Choose Products",
     title: "Choose Products",
     description:
       "Browse our curated collection of premium digital tools and select the ones that fit your workflow.",
   },
   {
     number: "03",
-    icon: "🚀",
+    img: rocketImg,
+    alt: "Start Creating",
     title: "Start Creating",
     description:
       "Instantly access your tools and start boosting your productivity and creating amazing work.",
@@ -49,7 +56,7 @@ const HowItWorks = () => {
               {/* Icon Circle */}
               <div className="relative w-[100px] h-[100px] flex items-center justify-center">
                 <div className="absolute inset-0 rounded-full bg-violet-600 opacity-10"></div>
-                <span className="text-4xl z-10">{step.icon}</span>
+                <img src={step.img} alt={step.alt} className="w-12 h-12 object-contain z-10" />
               </div>
 
               {/* Title */}

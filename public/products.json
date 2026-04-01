@@ -8,7 +8,8 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
-    "icon": "✍️"
+    "icon": "✍️",
+    "image": "writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["500+ premium templates", "Brand kit builder", "Export to any format"],
-    "icon": "🎨"
+    "icon": "🎨",
+    "image": "design-tool.png"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "tag": "New",
     "tagType": "new",
     "features": ["10M+ stock assets", "4K video downloads", "Commercial license"],
-    "icon": "🖼️"
+    "icon": "🖼️",
+    "image": "shopping-cart.png"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["1000+ automations", "API integrations", "Advanced scheduling"],
-    "icon": "⚙️"
+    "icon": "⚙️",
+    "image": "operation.png"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "tag": "New",
     "tagType": "new",
     "features": ["ATS-optimized templates", "AI suggestions", "One-click export"],
-    "icon": "📄"
+    "icon": "📄",
+    "image": "portfolio.png"
   },
   {
     "id": 6,
@@ -63,6 +68,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Multi-platform scheduler", "Content calendar", "Analytics dashboard"],
-    "icon": "📱"
+    "icon": "📱",
+    "image": "social-media.png"
   }
 ]

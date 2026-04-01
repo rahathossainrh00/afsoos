@@ -55,8 +55,12 @@ const Cart = ({ carts, setCarts }) => {
                   >
                     {/* Left */}
                     <div className="flex items-center gap-4">
-                      <div className="w-[60px] h-[60px] rounded-full border border-[#f2f2f2] bg-white flex items-center justify-center text-2xl flex-shrink-0">
-                        {product.icon}
+                      <div className="w-[60px] h-[60px] rounded-full border border-[#f2f2f2] bg-white flex items-center justify-center text-2xl flex-shrink-0 overflow-hidden p-3">
+                        {product.image ? (
+                          <img src={`/products/${product.image}`} alt={product.name} className="w-full h-full object-contain" />
+                        ) : (
+                          product.icon
+                        )}
                       </div>
                       <div>
                         <p className="font-semibold text-xl text-[#101727]">

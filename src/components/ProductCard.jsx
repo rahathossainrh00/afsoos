@@ -7,7 +7,7 @@ const tagStyles = {
 };
 
 const ProductCard = ({ product, carts, setCarts }) => {
-  const { id, name, description, price, period, tag, tagType, features, icon } = product;
+  const { id, name, description, price, period, tag, tagType, features, icon, image } = product;
 
   const isInCart = carts.some((item) => item.id === id);
 
@@ -41,9 +41,9 @@ const ProductCard = ({ product, carts, setCarts }) => {
         </span>
       )}
 
-      {/* Icon */}
-      <div className="w-[60px] h-[60px] rounded-full border border-[#f2f2f2] bg-[#f9fafc] flex items-center justify-center text-3xl">
-        {icon}
+      {/* Icon/Image */}
+      <div className="w-[60px] h-[60px] rounded-full border border-[#f2f2f2] bg-[#f9fafc] flex items-center justify-center text-3xl overflow-hidden p-3">
+        {image ? <img src={`/products/${image}`} alt={name} className="w-full h-full object-contain" /> : icon}
       </div>
 
       {/* Name */}
