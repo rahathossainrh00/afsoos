@@ -5,7 +5,7 @@ const ProductList = ({ productPromise, carts, setCarts }) => {
   const products = use(productPromise);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-10 items-stretch">
       {products.map((product) => (
         <ProductCard
           key={product.id}
@@ -38,14 +38,8 @@ const ProductsSkeleton = () => (
 
 const Products = ({ productPromise, carts, setCarts }) => {
   return (
-    <section className="py-[120px] bg-white" id="products">
+    <section className="pb-[120px] pt-4 bg-white" id="products">
       <div className="max-w-[1200px] mx-auto px-6">
-        <h2 className="text-[48px] font-extrabold text-[#101727] text-center leading-tight">
-          Our Premium Tools
-        </h2>
-        <p className="text-base text-[#627382] text-center mt-4 max-w-[560px] mx-auto leading-relaxed">
-          Choose from our curated collection of professional-grade digital tools, built for creators, entrepreneurs, and teams.
-        </p>
 
         <Suspense fallback={<ProductsSkeleton />}>
           <ProductList

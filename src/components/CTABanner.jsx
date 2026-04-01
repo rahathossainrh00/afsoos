@@ -1,6 +1,6 @@
 const CTABanner = ({ onExplore }) => {
   return (
-    <section className="bg-gradient-to-br from-violet-700 to-indigo-600 py-[120px]">
+    <section className="py-[120px]" style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}>
       <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center gap-8">
         {/* Heading */}
         <h2 className="text-[40px] font-extrabold text-white text-center leading-tight max-w-[640px]">

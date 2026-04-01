@@ -9,8 +9,12 @@ const Banner = ({ onExplore }) => {
         <div className="flex-1 flex flex-col gap-6">
           {/* Badge */}
           <div className="inline-flex">
-            <span className="rounded-full bg-[#e1e7ff] text-violet-700 text-sm font-medium px-4 py-2">
-              ✨ New: AI-Powered Tools Available
+            <span className="rounded-full bg-[#e1e7ff] text-violet-700 text-sm font-medium px-4 py-2 flex items-center gap-2">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+              </span>
+              New: AI-Powered Tools Available
             </span>
           </div>
 
@@ -28,7 +32,8 @@ const Banner = ({ onExplore }) => {
           <div className="flex items-center gap-4 mt-2">
             <button
               onClick={onExplore}
-              className="rounded-full h-[52px] px-6 bg-violet-600 text-white font-bold text-base hover:bg-violet-700 transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+              className="rounded-full h-[52px] px-6 text-white font-bold text-base hover:opacity-90 transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+              style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
             >
               Explore Products
             </button>
@@ -38,17 +43,6 @@ const Banner = ({ onExplore }) => {
             </button>
           </div>
 
-          {/* Trust badges */}
-          <div className="flex items-center gap-6 mt-4">
-            <div className="flex items-center gap-2">
-              <span className="text-yellow-400 text-lg">★★★★★</span>
-              <span className="text-sm text-[#627382] font-medium">4.9/5 rating</span>
-            </div>
-            <div className="w-px h-5 bg-[#e2e8f0]"></div>
-            <span className="text-sm text-[#627382] font-medium">50K+ happy users</span>
-            <div className="w-px h-5 bg-[#e2e8f0]"></div>
-            <span className="text-sm text-[#627382] font-medium">No credit card required</span>
-          </div>
         </div>
 
         {/* Right Image */}
@@ -56,7 +50,7 @@ const Banner = ({ onExplore }) => {
           <img
             src={bannerImg}
             alt="DigiTools dashboard"
-            className="w-[500px] h-[590px] rounded-[8px] object-cover shadow-2xl"
+            className="w-[500px] h-[590px] rounded-[8px] object-cover"
           />
         </div>
       </div>

@@ -42,20 +42,26 @@ const HowItWorks = () => {
         </p>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] mt-12 items-stretch">
           {steps.map((step) => (
             <div
               key={step.number}
-              className="rounded-[16px] p-8 flex flex-col items-center gap-5 border-2 border-[#f1f1f1] bg-white hover:shadow-lg transition-shadow duration-300"
+              className="relative overflow-visible h-full rounded-[16px] p-8 flex flex-col items-center gap-5 border-2 border-[#f1f1f1] bg-white hover:shadow-lg transition-shadow duration-300"
             >
               {/* Step Badge */}
-              <div className="w-10 h-10 rounded-full bg-violet-600 text-white font-bold text-sm flex items-center justify-center self-start">
+              <div
+                className="absolute top-8 right-8 w-10 h-10 rounded-full text-white font-bold text-sm flex items-center justify-center"
+                style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
+              >
                 {step.number}
               </div>
 
               {/* Icon Circle */}
               <div className="relative w-[100px] h-[100px] flex items-center justify-center">
-                <div className="absolute inset-0 rounded-full bg-violet-600 opacity-10"></div>
+                <div
+                  className="absolute inset-0 rounded-full opacity-10"
+                  style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
+                ></div>
                 <img src={step.img} alt={step.alt} className="w-12 h-12 object-contain z-10" />
               </div>
 

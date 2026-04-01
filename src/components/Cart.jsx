@@ -94,7 +94,8 @@ const Cart = ({ carts, setCarts }) => {
               {/* Checkout Button */}
               <button
                 onClick={handleCheckout}
-                className="rounded-full h-[52px] w-full bg-violet-600 text-white font-bold text-base hover:bg-violet-700 transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+                className="rounded-full h-[52px] w-full text-white font-bold text-base hover:opacity-90 transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+                style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
               >
                 Proceed to Checkout
               </button>

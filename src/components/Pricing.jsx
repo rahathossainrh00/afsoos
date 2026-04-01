@@ -63,13 +63,14 @@ const Pricing = () => {
               key={plan.name}
               className={`w-full md:w-[380px] rounded-[16px] p-8 flex flex-col gap-6 relative ${
                 plan.variant === "dark"
-                  ? "bg-gradient-to-br from-violet-700 to-violet-500 text-white shadow-2xl scale-105"
+                  ? "text-white shadow-2xl scale-105"
                   : "bg-[#f9fafc] border-2 border-[#f2f2f2]"
               }`}
+              style={plan.variant === "dark" ? { background: 'linear-gradient(135deg, #4F39F6, #9514FA)' } : {}}
             >
               {/* Most Popular badge */}
               {plan.badge && (
-                <span className="absolute top-6 right-6 rounded-full bg-[#fef3c6] text-[#bb4d00] text-sm font-medium px-3 py-1.5">
+                <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#fef3c6] text-[#bb4d00] text-sm font-medium px-4 py-1.5 shadow-sm">
                   {plan.badge}
                 </span>
               )}
@@ -147,8 +148,9 @@ const Pricing = () => {
                 className={`rounded-full h-[52px] w-full font-bold text-base transition-all duration-200 cursor-pointer ${
                   plan.variant === "dark"
                     ? "bg-white text-violet-700 hover:bg-violet-50 shadow-md"
-                    : "bg-violet-600 text-white hover:bg-violet-700 shadow-md hover:shadow-lg"
+                    : "text-white hover:opacity-90 shadow-md hover:shadow-lg"
                 }`}
+                style={plan.variant === "dark" ? {} : { background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
               >
                 {plan.cta}
               </button>

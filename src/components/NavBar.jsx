@@ -46,14 +46,20 @@ const NavBar = ({ carts, onCartClick }) => {
               />
             </svg>
             {carts.length > 0 && (
-              <span className="absolute -top-1 -right-1 w-5 h-5 bg-violet-600 text-white text-xs font-bold rounded-full flex items-center justify-center">
+              <span
+                className="absolute -top-1 -right-1 w-5 h-5 text-white text-xs font-bold rounded-full flex items-center justify-center"
+                style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
+              >
                 {carts.length}
               </span>
             )}
           </button>
 
           {/* Get Started */}
-          <button className="rounded-full px-5 py-3 bg-violet-600 text-white font-semibold text-sm hover:bg-violet-700 transition-colors duration-200 shadow-sm cursor-pointer">
+          <button
+            className="rounded-full px-5 py-3 text-white font-semibold text-sm hover:opacity-90 transition-all duration-200 shadow-sm cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
+          >
             Get Started
           </button>
         </div>

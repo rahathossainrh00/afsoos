@@ -31,7 +31,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
   };
 
   return (
-    <div className="rounded-[16px] p-6 flex flex-col gap-4 border-2 border-[#f2f2f2] bg-white relative hover:shadow-xl hover:border-violet-100 transition-all duration-300 hover:-translate-y-1">
+    <div className="h-full rounded-[16px] p-6 flex flex-col gap-4 border-2 border-[#f2f2f2] bg-white relative hover:shadow-xl hover:border-violet-100 transition-all duration-300 hover:-translate-y-1">
       {/* Badge */}
       {tag && (
         <span
@@ -71,11 +71,12 @@ const ProductCard = ({ product, carts, setCarts }) => {
       {/* Buy Button */}
       <button
         onClick={handleBuy}
-        className={`rounded-full h-[52px] w-full font-bold text-base mt-auto transition-all duration-200 cursor-pointer ${
+        className={`rounded-full h-[52px] w-full font-bold text-base mt-auto transition-all duration-200 cursor-pointer flex-shrink-0 ${
           isInCart
             ? "bg-green-500 text-white cursor-default"
-            : "bg-violet-600 text-white hover:bg-violet-700 shadow-md hover:shadow-lg"
+            : "text-white hover:opacity-90 shadow-md hover:shadow-lg"
         }`}
+        style={isInCart ? {} : { background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
       >
         {isInCart ? "✓ Added" : "Buy Now"}
       </button>

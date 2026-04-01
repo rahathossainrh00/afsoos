@@ -6,7 +6,7 @@ const Stats = () => {
   ];
 
   return (
-    <section className="bg-violet-600 py-[60px]">
+    <section className="py-[60px]" style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}>
       <div className="max-w-[1200px] mx-auto px-6 flex justify-center items-center">
         {stats.map((stat, index) => (
           <div key={stat.label} className="flex items-center">

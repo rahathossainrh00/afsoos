@@ -29,7 +29,8 @@ class ErrorBoundary extends Component {
           </p>
           <button
             onClick={() => window.location.reload()}
-            className="mt-8 rounded-full h-[52px] px-8 bg-violet-600 text-white font-bold text-base hover:bg-violet-700 shadow-md cursor-pointer"
+            className="mt-8 rounded-full h-[52px] px-8 text-white font-bold text-base hover:opacity-90 transition-all duration-200 shadow-md cursor-pointer"
+            style={{ background: 'linear-gradient(135deg, #4F39F6, #9514FA)' }}
           >
             Refresh Page
           </button>
